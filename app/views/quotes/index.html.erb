@@ -1,1 +1,24 @@
-<h1>hey</h1>
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('https://images.unsplash.com/photo-1506971456216-7b494f54d588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80');">
+  <div class="banner-content">
+    <h1>Amazing quotes</h1>
+    <p>the best quotes in Internet</p>
+   <%= link_to "Add a new quote", new_quote_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
+
+<div class="quotes-wrap">
+    <div class="row">
+    <% @quotes.each do |quote| %>
+
+      <!--  Cocktail card -->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+              <p>
+              <%= quote.content %>
+              </p>
+               <%= link_to "Comment", new_comment_path, class: "btn btn-primary" %>
+            <% end %>
+ </div>
+</div>
+

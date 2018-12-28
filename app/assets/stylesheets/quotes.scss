@@ -1,3 +1,101 @@
 // Place all the styles related to the quotes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100px;
+opacity: 0.9;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.banner p {
+  font-family: 'Prompt', sans-serif;
+  border-radius: 4px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-treehouse {
+    font-family: 'Prompt', sans-serif;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #B1B01B;
+  transition: background 0.3s ease;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #87850a;
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    margin-top: 20px;
+
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 40px;
+}
+.remove {
+    font-family: 'Prompt', sans-serif;
+  color: white;
+  font-size: 24px;
+  opacity: 0.7;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+a {
+  color: #c4c4c2;
+}
+a:hover {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+#remove {
+  font-size: 12px;
+      font-family: 'Prompt', sans-serif;
+      opacity: 0.9;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
