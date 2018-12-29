@@ -99,3 +99,79 @@ a:hover {
   padding-top: 20px;
   padding-bottom:20px;
 }
+
+
+.q-c {
+    font-family: 'Prompt', sans-serif;
+
+  padding: 2vh 3vw;
+  font-size: 3vh;
+  margin-top: 2vh;
+  align-self: center;
+}
+
+
+
+.item {
+    font-family: 'Prompt', sans-serif;
+
+      align-self: center;
+
+}
+
+.comment-add {
+    font-family: 'Prompt', sans-serif;
+
+  align-self: center;
+}
+
+.list-quotes {
+    font-family: 'Prompt', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ededee;
+  padding: 2vh 4vw ;
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  margin: 2vh 4vw;
+  color: #686868;
+
+}
+
+.banner-content2 {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ededee;
+  padding: 2vh 4vw;
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  margin: 4vh 4vw;
+  min-height: 60vh;
+  background-color: rgba(130,15,0,0.4);
+
+
+}
+
+.quote_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+
+.banner2 {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  //align-items: center;
+  justify-content: center;
+}

@@ -9,16 +9,26 @@
 
 <div class="form">
 <%= simple_form_for [@quote, @comment]  do |f| %>
-    <%= f.input :text %>
-    <%= f.input :author %>
+    <p>Your name/nickname:</p>
+    <%= f.input :author, label: false %>
+    <p>Your comment:</p>
+    <%= f.input :text, label: false %>
 
   <%= f.submit "Save", class: "btn btn-default btn-primary" %>
 <% end %>
 </div>
 
-    <div id="artist-tags">
+
+<div class="others">
+  <p>
+    Other people's opinions:
+  </p>
+</div>
+      <div class="users-comments">
       <% @quote.comments.each do |c| %>
-        <div class="tag"><%= c.text %></div>
-        <div class="tag">written by: <%= c.author %></div>
+       <div class=comments-and-authors>
+        <div class="content-comment">"<%= c.text %>"</div>
+        <div class="author-comment">written by: <%= c.author %>, <%= c.created_at.strftime("%m/%d/%Y") %></div>
+      </div>
       <% end %>
     </div>

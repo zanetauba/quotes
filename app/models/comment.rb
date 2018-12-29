@@ -3,4 +3,6 @@ class Comment < ApplicationRecord
 
 
   validates :text, presence: true
+    validates :author, presence: true
+
 end

@@ -8,14 +8,19 @@
 </div>
 
 
-<div id="artists">
+<div class="quotes-wrap">
   <% @quotes.each do |q| %>
-      <div class="artist">
-      <h5 class="text-center"><%= q.content %></h5>
-
-    <%= link_to new_quote_comment_path(q) do %>
-        <h5 class="text-center class: btn btn-primary">Comment</h5>
-    <% end %>
+      <div class="list-quotes">
+        <div class="q-c item"><%= q.content %></div>
+        <div class="q-c item">
+          <h5 class="btn btn-primary">
+        <%= link_to new_quote_comment_path(q) do %>
+            Comment
+          </h5>
+          </div>
+      </div>
+      </div>
+        <% end %>
       </div>
   <% end %>
 </div>
