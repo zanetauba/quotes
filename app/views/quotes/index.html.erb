@@ -8,17 +8,14 @@
 </div>
 
 
-<div class="quotes-wrap">
-    <div class="row">
-    <% @quotes.each do |quote| %>
+<div id="artists">
+  <% @quotes.each do |q| %>
+      <div class="artist">
+      <h5 class="text-center"><%= q.content %></h5>
 
-      <!--  Cocktail card -->
-      <div class="col-xs-12 col-sm-6 col-md-3">
-              <p>
-              <%= quote.content %>
-              </p>
-               <%= link_to "Comment", new_comment_path, class: "btn btn-primary" %>
-            <% end %>
- </div>
+    <%= link_to new_quote_comment_path(q) do %>
+        <h5 class="text-center class: btn btn-primary">Comment</h5>
+    <% end %>
+      </div>
+  <% end %>
 </div>
-

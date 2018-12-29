@@ -1,1 +1,24 @@
-add
+
+<div class="content-quote">
+  <%= @quote.content %>
+
+</div>
+
+
+
+
+<div class="form">
+<%= simple_form_for [@quote, @comment]  do |f| %>
+    <%= f.input :text %>
+    <%= f.input :author %>
+
+  <%= f.submit "Save", class: "btn btn-default btn-primary" %>
+<% end %>
+</div>
+
+    <div id="artist-tags">
+      <% @quote.comments.each do |c| %>
+        <div class="tag"><%= c.text %></div>
+        <div class="tag">written by: <%= c.author %></div>
+      <% end %>
+    </div>

@@ -12,11 +12,15 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(quote_params)
     if @quote.save
-      redirect_to root_path
+      redirect_to root_path(@quote)
     else
       render 'new'
     end
   end
+
+   def show
+    @quote = Quote.find(params[:id])
+   end
 
  private
 
