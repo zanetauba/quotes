@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2018_12_28_201819) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "text"
-    t.integer "quote_id"
+    t.bigint "quote_id"
     t.string "author"
     t.index ["quote_id"], name: "index_comments_on_quote_id"
   end
@@ -27,4 +30,5 @@ ActiveRecord::Schema.define(version: 2018_12_28_201819) do
     t.text "content"
   end
 
+  add_foreign_key "comments", "quotes"
 end
